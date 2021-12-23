@@ -1,12 +1,8 @@
-import "./header.css";
-import React from 'react'
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Header() {
-  return (
-    <div className="header">
-      <h1>Calculator</h1>
-    </div>
-  );
+  return (<div><h1 className="display-3">Calculator</h1></div>);
 }
 
 export default Header;
