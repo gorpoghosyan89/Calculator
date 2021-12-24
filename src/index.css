@@ -9,3 +9,10 @@
   font-weight: 300;
   line-height: 1.2;
 }
+.col-3.simple-level-operations .d-flex.flex-wrap{
+  flex-direction: column;
+}
+.simple-level-operations{
+  display: flex;
+  justify-content: center;
+}

@@ -1,10 +1,9 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 
-function MOperation() {
+function MOperation({ item }) {
   return (
     <div className="col-2 text-center">
-      <span className="display-7 fw-normal">MC</span>
+      <span className="display-7 fw-normal">{item}</span>
     </div>
   );
 }
