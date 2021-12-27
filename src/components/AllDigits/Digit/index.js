@@ -1,10 +1,16 @@
 import React from "react";
+import { ReSignValue } from "../../../Helpers/utilits";
+import { MakeDecimalNumber } from "../../../Helpers/utilits";
 
 function Digit({ item, setCurrentValue }) {
-  const handlerOnClick = (e) => {
+  const handlerOnDigitsClick = (e) => {
     setCurrentValue((prev) => {
-      if (item === "+/-" || prev.length >= 20) {
+      if (prev.length >= 20) {
         return prev;
+      } else if (item === "+/-") {
+        return ReSignValue(prev);
+      } else if (item === ".") {
+        return MakeDecimalNumber(prev);
       } else {
         return prev === 0 ? item : `${prev}${item}`;
       }
@@ -15,7 +21,7 @@ function Digit({ item, setCurrentValue }) {
     <div
       className="text-center"
       onClick={(e) => {
-        handlerOnClick(e);
+        handlerOnDigitsClick(e);
       }}
     >
       <span className="display-7 fw-normal">{item}</span>
