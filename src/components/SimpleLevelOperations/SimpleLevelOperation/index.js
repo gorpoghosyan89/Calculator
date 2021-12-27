@@ -2,7 +2,7 @@ import React from "react";
 
 function SimpleLevelOperation({ item }) {
   return (
-    <div className="col-3 text-center">
+    <div className="text-center">
       <span className="display-7 fw-normal">{item}</span>
     </div>
   );

@@ -3,7 +3,6 @@ import SecondLevelOperation from "./components/SecondLevelOperations/SecondLevel
 import MOperation from "./components/MLevelOperations/MOperation";
 import SimpleLevelOperation from "./components/SimpleLevelOperations/SimpleLevelOperation";
 
-
 export const arrays = {
   MLevelOperations: {
     comp: MOperation,
@@ -11,7 +10,7 @@ export const arrays = {
   },
   SecondLevelOperations: {
     comp: SecondLevelOperation,
-    arr: ["%", "CE", "C", "<=", "1/x", "x^2", "x^1/2", "/"],
+    arr: ["%", "CE", "C", "←", "1/x", "x*2", "√x", "÷"],
   },
   AllDigits: {
     comp: Digit,
@@ -19,6 +18,6 @@ export const arrays = {
   },
   SimpleLevelOperations: {
     comp: SimpleLevelOperation,
-    arr: ["X","-","+","="],
-  }
+    arr: ["×", "-", "+", "="],
+  },
 };
