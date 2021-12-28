@@ -22,7 +22,7 @@ function App() {
                   <MLevelOperations />
                 </div>
                 <div className="col-12 second-level-operations">
-                  <SecondLevelOperations />
+                  <SecondLevelOperations setCurrentValue={setCurrentValue}/>
                 </div>
                 <div className="col-12 digit-level-operations d-flex">
                   <div className="col-9">

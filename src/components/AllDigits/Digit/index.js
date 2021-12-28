@@ -3,7 +3,7 @@ import { ReSignValue } from "../../../Helpers/utilits";
 import { MakeDecimalNumber } from "../../../Helpers/utilits";
 
 function Digit({ item, setCurrentValue }) {
-  const handlerOnDigitsClick = (e) => {
+  const handlerOnDigitsClick = () => {
     setCurrentValue((prev) => {
       if (prev.length >= 20) {
         return prev;
@@ -20,8 +20,8 @@ function Digit({ item, setCurrentValue }) {
   return (
     <div
       className="text-center"
-      onClick={(e) => {
-        handlerOnDigitsClick(e);
+      onClick={() => {
+        handlerOnDigitsClick();
       }}
     >
       <span className="display-7 fw-normal">{item}</span>

@@ -3,10 +3,16 @@ import SecondLevelOperation from "./SecondLevelOperation";
 import { RenderOperations } from "../../Helpers/utilits";
 import { arrays } from "../../data";
 
-function SecondLevelOperations() {
+function SecondLevelOperations({ setCurrentValue }) {
   const secondLevelOperationsArray = arrays.SecondLevelOperations.arr;
   return (
-    <>{RenderOperations(secondLevelOperationsArray, SecondLevelOperation)}</>
+    <>
+      {RenderOperations(
+        secondLevelOperationsArray,
+        SecondLevelOperation,
+        setCurrentValue
+      )}
+    </>
   );
 }
 
