@@ -4,6 +4,7 @@ import {
   DivideOneToCurrentNumber,
   QuadratePowerCurrentNumber,
   QuadrateSquareCurrentNumber,
+  DivideCurrentNumbers,
 } from "../../../Helpers/utilits";
 
 function SecondLevelOperation({ item, setCurrentValue }) {
@@ -17,6 +18,8 @@ function SecondLevelOperation({ item, setCurrentValue }) {
         ? QuadratePowerCurrentNumber(prev)
         : item === "√x"
         ? QuadrateSquareCurrentNumber(prev)
+        : item === "/"
+        ? DivideCurrentNumbers(prev)
         : "";
     });
 

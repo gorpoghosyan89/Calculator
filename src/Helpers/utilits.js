@@ -41,7 +41,7 @@ export const ClearLastDigit = (prev) => {
 //  1/x
 
 export const DivideOneToCurrentNumber = (prev) => {
-  return prev !== 0 ? 1 / Number(prev) : alert('The number must not be zero');
+  return prev !== 0 ? 1 / Number(prev) : alert("The number must not be zero");
 };
 
 //  x*2
@@ -53,5 +53,13 @@ export const QuadratePowerCurrentNumber = (prev) => {
 //  √x
 
 export const QuadrateSquareCurrentNumber = (prev) => {
-  return prev >= 0 ? Math.sqrt(prev) : alert('The number must more than 0');
+  return prev >= 0 ? Math.sqrt(prev) : alert("The number must more than 0");
+};
+
+//  ÷
+
+export const DivideCurrentNumbers = (prev) => {
+  console.log(prev);
+
+  // return prev;
 };

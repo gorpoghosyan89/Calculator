@@ -10,7 +10,7 @@ export const arrays = {
   },
   SecondLevelOperations: {
     comp: SecondLevelOperation,
-    arr: ["%", "CE", "C", "←", "1/x", "x*2", "√x", "÷"],
+    arr: ["%", "CE", "C", "←", "1/x", "x*2", "√x", "/"],
   },
   AllDigits: {
     comp: Digit,
