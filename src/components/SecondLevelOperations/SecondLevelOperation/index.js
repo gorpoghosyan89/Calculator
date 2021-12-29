@@ -20,10 +20,10 @@ function SecondLevelOperation({ item, setCurrentValue }) {
         ? QuadrateSquareCurrentNumber(prev)
         : item === "/"
         ? DivideCurrentNumbers(prev)
-        : "";
+        : item === "C" || item === "CE"
+        ? setCurrentValue(0)
+        : setCurrentValue(prev);
     });
-
-    item === "C" && setCurrentValue(0);
   };
 
   return (

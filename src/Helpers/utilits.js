@@ -58,8 +58,6 @@ export const QuadrateSquareCurrentNumber = (prev) => {
 
 //  ÷
 
-export const DivideCurrentNumbers = (prev) => {
-  console.log(prev);
+export const DivideCurrentNumbers = (prev, setCurrentValue) => {
 
-  // return prev;
 };
