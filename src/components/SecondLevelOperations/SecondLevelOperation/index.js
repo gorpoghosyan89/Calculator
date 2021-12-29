@@ -33,7 +33,7 @@ function SecondLevelOperation({ item, setCurrentValue }) {
         handlerOnSecondLevelClick();
       }}
     >
-      <span className="display-7 fw-normal">{item}</span>
+      <span className="display-7  fw-normal">{item}</span>
     </div>
   );
 }
