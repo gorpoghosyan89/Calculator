@@ -7,8 +7,10 @@ import {
   DivideCurrentNumbers,
 } from "../../../Helpers/utilits";
 
-function SecondLevelOperation({ item, setCurrentValue }) {
+function SecondLevelOperation({ item, setCurrentValue, multiOperationValue}) {
+
   const handlerOnSecondLevelClick = () => {
+    
     setCurrentValue((prev) => {
       return item === "1/x"
         ? DivideOneToCurrentNumber(prev)
@@ -19,7 +21,7 @@ function SecondLevelOperation({ item, setCurrentValue }) {
         : item === "√x"
         ? QuadrateSquareCurrentNumber(prev)
         : item === "/"
-        ? DivideCurrentNumbers(prev)
+        ? DivideCurrentNumbers(prev,multiOperationValue)
         : item === "C" || item === "CE"
         ? setCurrentValue(0)
         : setCurrentValue(prev);
@@ -28,6 +30,7 @@ function SecondLevelOperation({ item, setCurrentValue }) {
 
   return (
     <div
+ 
       className="text-center"
       onClick={() => {
         handlerOnSecondLevelClick();

@@ -3,7 +3,12 @@ import { arrays } from "../data";
 
 // Rendering Operators Components
 
-export const RenderOperations = (arr, Component, setCurrentValue) => {
+export const RenderOperations = (
+  arr,
+  Component,
+  setCurrentValue,
+  multiOperationValue
+) => {
   return (
     <div className="d-flex flex-wrap">
       {arr.map((el, index) => {
@@ -13,6 +18,7 @@ export const RenderOperations = (arr, Component, setCurrentValue) => {
             item={el}
             className={arrays}
             setCurrentValue={setCurrentValue}
+            multiOperationValue={multiOperationValue}
           />
         );
       })}
@@ -58,6 +64,12 @@ export const QuadrateSquareCurrentNumber = (prev) => {
 
 //  ÷
 
-export const DivideCurrentNumbers = (prev, setCurrentValue) => {
+// firtstValue: 0,
+// secondValue: 3,
+// result: 0,
+// operation: "",
 
+export const DivideCurrentNumbers = (prev, multiOperationValue) => {
+  console.log(prev,multiOperationValue)
+ 
 };
